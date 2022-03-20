@@ -564,7 +564,6 @@ the website, in dark theme
   border-top: 1px solid rgb(135, 134, 134);
   border-left: none;
   border-right: none;
-  transition: ease-in-out 2s;
 }
 
 .dropdown {
