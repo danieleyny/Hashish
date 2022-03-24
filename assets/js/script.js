@@ -1,14 +1,17 @@
-function search_animal() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('w3-quarter');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="list-item";                 
-        }
-    }
+var data = {
+
+"Products" : [
+
+    {
+    "ProductTitle" : "",
+    "MoreInfo" : "32 / Per Box <br/> $70/ Per Box <br/><br/> This is a test discription for the product."
+    },
+    {},
+    {}
+]
+
+    
+
 }
+
+console.log(data);
