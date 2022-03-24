@@ -538,7 +538,17 @@ the website, in dark theme
 
 /*== Products Page ==*/
 
+ /*Search Bar */
     
+#searchbar{
+  margin-left: 43%;
+  padding:13px;
+  width: 155px;
+  border-radius: 10px;
+}
+
+
+
     /*
     * @subsection Shop
     */
@@ -1192,10 +1202,12 @@ font-weight: 700;
     padding: 1.5rem;
   }
 
+ 
   .product__container{
     grid-template-columns: .6fr;
     justify-content: center;
   }
+
 
   .category__container,
   .trick__container{
@@ -1214,6 +1226,14 @@ font-weight: 700;
     right: 0rem;
     bottom: 0;
   }
+  
+  #searchbar{
+    margin-left: 30%;
+    padding:13px;
+    width: 155px;
+    border-radius: 10px;
+  }
+
   .products__title{
     font-size: 35px;
 }
