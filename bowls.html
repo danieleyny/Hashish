@@ -75,11 +75,15 @@
     
         <h1 class="products__title">Bowls & Pipes</h1>
     
+        <input id="searchbar" onkeyup="search_products()" type="text"
+        name="search" placeholder="Search Products">
+
         <br/><br/><br/><br/>
     
         <!-- First Photo Grid-->
         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-          <div class="w3-quarter">
+          
+            <div class="w3-quarter">
             <img src="assets/img/Bowls/Rickandmortypipe-removebg-preview.png" alt="Sandwich" style="width:100%">
                 <p>Rick & Morty Juice Box Bong<span id="dots"></span><span class="moreinfo_text" id="more"><br/><br/> 50 / Pieces per box<br/>$50 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
                     <button class="button" onclick="myMoreInfoBtn()" id="myBtn"> More Info </button>
