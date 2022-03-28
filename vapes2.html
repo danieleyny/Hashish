@@ -32,7 +32,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="index2.html" class="nav__link">Home</a>
                         </li>
                         
                         <li class="nav__item">
@@ -63,46 +63,173 @@
         </header>
 
         <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <div class="home__container container grid">
-                    <img src="assets/img/giphy.gif" alt="" class="home__img">
-
-                    <div class="home__data">
-                        <h1 class="home__title">
-                          Welcome To <br> <div class="home__title2">Hashish Shop </div>
-                        </h1>
-                        <p class="home__description">
-                            Welcome to Hashish Smoke's website, a catalog to provide a better insight to who we are and what we do. You will be able to scroll and search through our various products list which will be updated on a regular basis. For any additional questions or concerns that you might have, please feel free to contact us through the contact section.
-                        </p>
-                        <a href="#products" class="button button--flex">
-                            Products Page <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-
-                    <div class="home__social">
-                        <span class="home__social-follow">Follow Us</span>
-
-                        <div class="home__social-links">
-                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                                <i class="ri-discord-line"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-telegram-line"></i>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             
+
+
+
+
+<!-- !Products! -->
+<section id="products"> 
+    
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" >
+    
+        <h1 class="products__title">Vape Products</h1>
+    
+        <input id="searchbar" onkeyup="search_products()" type="text"
+        name="search" placeholder="Search Products">
+        
+        <br/><br/><br/><br/>
+    
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+          <div class="w3-quarter">
+                <p>Air Bar Diamond <br> <div class="dropdown">
+                    <button onclick="DropDownMenu1()" class="dropbtn">Available Flavors</button>
+                    <div id="myDropdown1" class="dropdown-content">
+                      <a href="#">Mango</a>
+                      <a href="#">Cool Mint</a>
+                      <a href="#">Pineapple Ice</a>
+                      <a href="#">Banana Ice</a>
+                      <a href="#">Watermelon Ice</a>
+                      <a href="#">Blueberry Ice</a>
+                      <a href="#">Cherry Cola</a>
+                      <a href="#">Mango Strawberry</a>
+                      <a href="#">Banana Pineapple</a>
+                    </div>
+                  </div><span id="dots"></span><span class="moreinfo_text" id="more"><br/><br/> 10 / Pieces per box<br/>$50 / Per Box <br/><br/>The Air Bar Diamond is a disposable vape pod device containing 1.8ML pod pre-filled with salt nic e-liquid. Allowing its users to enjoy a delicious vape with zero up-keep.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn()" id="myBtn"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+          <div class="w3-quarter">
+                <p>Air Bar Lux <br> <div class="dropdown">
+                    <button onclick="DropDownMenu2()" class="dropbtn">Available Flavors</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                      <a href="#">Sunset Cocktail</a>
+                      <a href="#">Shake Shake</a>
+                      <a href="#">Strawberry Mango</a>
+                      <a href="#">Cranberry Grape</a>
+                      <a href="#">Kiwi Strawberry</a>
+                      <a href="#">Guava Shake</a>
+                      <a href="#">Apple Shake</a>
+                      <a href="#">Cool Mint</a>
+                      <a href="#">Blueberry Kiwi Ice</a>
+                      <a href="#">Aloe Blackcurrant</a>
+                      <a href="#">Coconut Grove</a>
+                      <a href="#">Pink Lemonade</a>
+                    </div>
+                  </div><span id="dots2"></span><span class="moreinfo_text" id="more2"><br/><br/> 10 / Cones per box<br/>$60 / Per Box <br/><br/>The Air Bar LUX Disposable is a light-up edition device, pre-filled with 2.7ml of salt-based e-liquid in a 50mg nicotine level and is available in variety of flavors. Each device features an estimated 1000 puffs and has a high capacity internal 500mAh battery which is to be disposed of once the life cycle is complete.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn2()" id="myBtn2"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+          <div class="w3-quarter">
+                <p>Air Bar Max <br> <div class="dropdown">
+                    <button onclick="DropDownMenu3()" class="dropbtn">Available Flavors</button>
+                    <div id="myDropdown3" class="dropdown-content">
+                      <a href="#">Watermelon Ice</a>
+                      <a href="#">Shake Shake</a>
+                      <a href="#">Sakura Grape</a>
+                      <a href="#">Watermelon Candy</a>
+                      <a href="#">Kiwi Strawberry</a>
+                      <a href="#">Cool Mint</a>
+                    </div>
+                  </div><span id="dots3"></span><span class="moreinfo_text" id="more3"><br/><br/> 10 / Bundles per box<br/>$80 / Per Box <br/><br/>The Air Bar Max uses a larger tank than the previous model, the Air Bar Lux and Diamond editions. The new Air Bar Max is filled with 6.5ml of nic salt vape juice and has a unique form factor that has a wide body and narrow mouthpiece. Each Air Bar Max vape flavor is available in a 20mg or 50mg nicotine strength.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn3()" id="myBtn3"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+          <div class="w3-quarter">
+                <p>Hyde Edge <br> <div class="dropdown">
+                    <button onclick="DropDownMenu4()" class="dropbtn">Available Flavors</button>
+                    <div id="myDropdown4" class="dropdown-content">
+                      <a href="#">Bananas and cream</a>
+                      <a href="#">Energize</a>
+                      <a href="#">Strawberry Kiwi</a>
+                      <a href="#">Pina Colada</a>
+                      <a href="#">Tropical Gummy</a>
+                      <a href="#">Pineapple Peach Mango</a>
+                    </div>
+                  </div><span id="dots4"></span><span class="moreinfo_text" id="more4"><br/><br/> 10 / Pieces per box<br/>$70 / Per Box <br/><br/>The Hyde Edge is packed with 6.0ml of e-liquid, more than 5 times more than the Hyde Original. This extra large plus size is long lasting with the same incredible flavor that put Hyde disposable on the map.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn4()" id="myBtn4"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+        </div>
+        
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                    <p>Hyde Icon <br> <div class="dropdown">
+                        <button onclick="DropDownMenu5()" class="dropbtn">Available Flavors</button>
+                        <div id="myDropdown5" class="dropdown-content">
+                          <a href="#">Pink Lemonade</a>
+                          <a href="#">Strawberries and Cream</a>
+                          <a href="#">Strawberry Banana</a>
+                          <a href="#">Pineapple Ice</a>
+                          <a href="#">Pina Colada</a>
+                          <a href="#">Sour Apple</a>
+                          <a href="#">Spearmint</a>
+                          <a href="#">Blue Razz Ice</a>
+                          <a href="#">Banana Ice</a>
+                          <a href="#">Aloe Grape</a>
+                        </div>
+                      </div><span id="dots5"></span><span class="moreinfo_text" id="more5"><br/><br/> 10 / Pieces per box<br/>$100 / Per Box <br/><br/>Each Hyde Icon RECHARGE Disposable Vape 3300 Puffs comes pre-filled with 5% (50mg) salt nicotine vape juice in 12 tasty flavor options to choose from and a 10mL vape juice capacity. Housed within the device is a 600mAh rechargeable battery that can land you as many as 3300 puffs, ensuring you're more than satisfied.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn5()" id="myBtn5"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+              <div class="w3-quarter">
+                    <p>Myle Mini <br> <div class="dropdown">
+                        <button onclick="DropDownMenu6()" class="dropbtn">Available Flavors</button>
+                        <div id="myDropdown6" class="dropdown-content">
+                          <a href="#">Pink Lemonade</a>
+                          <a href="#">Banana Ice</a>
+                          <a href="#">Ice Mint</a>
+                          <a href="#">Ice Quadberry</a>
+                          <a href="#">Strawberry Watermelon</a>
+                          <a href="#">Iced Blueberry</a>
+                          <a href="#">Peach</a>
+                        </div>
+                      </div><span id="dots6"></span><span class="moreinfo_text" id="more6"><br/><br/> 10 / Pieces per box<br/>$65 / Per Box <br/><br/>The MYLÉ Mini is the newest all-in-one disposable nicotine delivery system manufactured by MYLÉ. Each box comes with two 1.2 mL disposable devices that are fully charged to provide the user with approximately 320 puffs per pod at a nicotine content of 5% by volume.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn6()" id="myBtn6"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+              <div class="w3-quarter">
+                    <p>Myle Mini 2 <br> <div class="dropdown">
+                        <button onclick="DropDownMenu()" class="dropbtn">Available Flavors</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Iced Quad Berry</a>
+                          <a href="#">Red Apple</a>
+                          <a href="#">Mango</a>
+                          <a href="#">Iced Mango</a>
+                          <a href="#">Menthol</a>
+                          <a href="#">Pink Lemonade</a>
+                        </div>
+                      </div><span id="dots7"></span><span class="moreinfo_text" id="more7"><br/><br/> 10 / Pieces per box<br/>$80 / Per Box <br/><br/>The Myle mini 2 Disposable Device is a new cutting-edge pre-filled disposable device that is compact, light, and portable. It require no maintenance, charging, or refilling. The Myle Mini 2 Disposable Device comes pre-filled with enough E-liquid that is enough to stay satisfied for the whole day.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn7()" id="myBtn7"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+              <div class="w3-quarter">
+                    <p>Puff Bar XXL <br> <div class="dropdown">
+                        <button onclick="DropDownMenu7()" class="dropbtn">Available Flavors</button>
+                        <div id="myDropdown7" class="dropdown-content">
+                          <a href="#">Lush Ice</a>
+                          <a href="#">Pineapple Grape</a>
+                          <a href="#">Mixed Berries Ice</a>
+                          <a href="#">Papaya Strawberry</a>
+                          <a href="#">Watermelon Cherry</a>
+                          <a href="#">Mango Orange Pomelo</a>
+                          <a href="#">Cranberry Lemon Ice</a>
+                        </div>
+                      </div><span id="dots8"></span><span class="moreinfo_text" id="more8"><br/><br/> 10 / Pieces per box<br/>$35 / Per Box <br/><br/>Each Puff XXL disposable device comes with 1600+ Puffs. The PUFF XXL is the longest-lasting disposable device in the Puff lineup. The flavor of the Puff XXL is printed on the front of the packaging, and the color of the PUFF XXL also indicates flavor.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn8()" id="myBtn8"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+        </div>
+      
+        
+      </div>
+    </section>
+
+
+
+            <br/><br/><br/>
 
             <!--==================== STEPS ====================-->
             <section class="steps section container">
@@ -146,82 +273,6 @@
 
 
 
-<!-- !Products! -->
-<section id="products"> 
-    
-    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" >
-    
-        <h1 class="products__title">Product Categories</h1>
-        
-        <input id="searchbar" onkeyup="search_products()" type="text"
-        name="search" placeholder="Search Products">
-    
-        <br/><br/><br/><br/><br/><br/><br/><br/>
-    
-        <!-- First Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <div class="product_line2"></div>
-            <div class="w3-quarter ">
-                  <a href="raw2.html"><button class="button" "> Raw  </button></a> <br/><br/>
-                <p1 alt="raw products raw rolling paper raw tips raw trident raw paper raw rolling paper raw black rolling paper raw cone raw pipe cleaners raw 2 roller raw hemp wick">A category including various products made and branded by the Raw company. RAW is a brand of rolling papers they are designed to be used for smoking tobacco and cannabis. RAW filters and hand-rolling machines are also available.</p1>    
-                <div class="product_line"></div>
-
-                        
-          </div>
-          <div class="w3-quarter">
-                     <a href="grinders2.html"><button class="button"> Grinders </button></a><br/><br/>
-                     <p1 alt="grinder grinders 4 piece grinder 4 layer grinder automatic grinder 2 layer grinder 2 piece grinder 420 backwoods grinder turtle grinder Elbert Grinder cookies grinder spongebob grinder complex grinder 4 layer grinder 2 layer grinder clear grinder custom grinder">A collection of various types of grinders and grinder designs. A grinder is a tool used to break down cannabis into small bits so they are a similar size and consistency. Weed is commonly ground down for rolling joints, blunts, and spliffs, but can also be done for packing bowls in pipes and bongs for a smoother, more consistent burn.</p1>    
-                <div class="product_line"></div>
-         </div>
-          
-          <div class="w3-quarter" >
-                    <a href="stash2.html"><button class="button">Stash </button></a><br/><br/>
-                    <p1 alt="stash bottle sprite stash coke stash stash can hidden lock locked cookies book lock box pepsi stash bottle ajax bleach stash can shaving cream stash can pringles stash can bleach stash bottle arizona stash bottle">A category including stash products and products for locking things in a hidden way. diversion safe or safe can, is an item used to hide personal belongings in plain sight. Some people use them to hide valuables but often they are used to conceal contraband.</p1>    
-                    <div class="product_line"></div>
-
-        </div>
-          <div class="w3-quarter">
-                    <a href="vapes2.html"><button class="button"> Vapes </button></a><br/><br/>
-                    <p1 alt="vape vapes myles myle mini air bars flum floom puff bars hyde duo hyde edge hyde icon air bar air bar max diamond air bar lux puff bar XXL">A collection of different vape products and companies that we have. Vaping is the inhaling of a vapor created by an electronic cigarette (e-cigarette) or other vaping device. E-cigarettes are battery-powered smoking devices. They have cartridges filled with a liquid that usually contains nicotine, flavorings, and chemicals. The liquid is heated into a vapor, which the person inhales.</p1>    
-                    <div class="product_line"></div>
-
-        </div>
-        </div>
-        
-
-        <br/><br/>
-
-        <!-- Second Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center">
-            <div class="w3-quarter">
-                     <a href="rollingtray2.html"><button class="button"> Rolling Tray </button></a> <br/><br/>
-                    <p1 alt="rolling trays large rolling tray medium rolling tray small rolling tray ooze rolling tray simpons rick and morty">A category including various rolling tray styles, sizes, and designs from various large brands. A rolling tray is a flat surface specifically designed to aid users in rolling joints, blunts, or spliffs.</p1>   
-                    <div class="product_line"></div>
-
-              </div>
-              <div class="w3-quarter">
-                     <a href="lighters2.html"><button class="button"> Lighters</a> </button><br/><br/>
-                    <p1 alt="lighter matches bic clipper weed lighter fire djeep">A category including different lighter products from various big brands. The category also includes different styles of lighters.</p1>    
-                    <div class="product_line"></div>
-
-             </div>
-              <div class="w3-quarter">
-                     <a href="bowls2.html"><button class="button"> Bowls & Pipes </button></a><br/><br/>
-                     <p1 alt="bowls pipes bongs glass bowl glass pipe glass bong rubber pipe rubber bowl rubber bong">A category which includes different bowls, pipes, and bongs all purposed for smoking. The category will include different designed products and different quality products.</p1>    
-                     <div class="product_line"></div>
-
-            </div>
-              <div class="w3-quarter">
-                     <a href="hookah2.html"><button class="button"> Hookah Products </button></a><br/><br/>
-                     <p1 alt="hookah hookah flavors hookah pipe hookah hoses hookah pipes, hookah sets hookah stems hookah shafts various hookah flavors hookah base hookah tray">A category including various hookah products. Such as hookah hoses, hookah pipes, hookah sets, hookah stems, hookah shafts, various hookah flavors, hookah base, hookah tray and more.</p1>  
-                     <div class="product_line"></div>
-
-            </div>
-        </div>
-        
-    </div>
-    
-    </section>
 
         <br/><br/><br/><br/><br/>
             <!--==================== QUESTIONS ====================-->

@@ -32,7 +32,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="index2.html" class="nav__link">Home</a>
                         </li>
                         
                         <li class="nav__item">
@@ -63,46 +63,79 @@
         </header>
 
         <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <div class="home__container container grid">
-                    <img src="assets/img/giphy.gif" alt="" class="home__img">
-
-                    <div class="home__data">
-                        <h1 class="home__title">
-                          Welcome To <br> <div class="home__title2">Hashish Shop </div>
-                        </h1>
-                        <p class="home__description">
-                            Welcome to Hashish Smoke's website, a catalog to provide a better insight to who we are and what we do. You will be able to scroll and search through our various products list which will be updated on a regular basis. For any additional questions or concerns that you might have, please feel free to contact us through the contact section.
-                        </p>
-                        <a href="#products" class="button button--flex">
-                            Products Page <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-
-                    <div class="home__social">
-                        <span class="home__social-follow">Follow Us</span>
-
-                        <div class="home__social-links">
-                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                                <i class="ri-discord-line"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-telegram-line"></i>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             
+
+
+
+
+<!-- !Products! -->
+<section id="products"> 
+    
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" >
+    
+        <h1 class="products__title">Bowls & Pipes</h1>
+    
+        <input id="searchbar" onkeyup="search_products()" type="text"
+        name="search" placeholder="Search Products">
+
+        <br/><br/><br/><br/>
+    
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+          
+            <div class="w3-quarter">
+                <p>Rick & Morty Juice Box Bong<span id="dots"></span><span class="moreinfo_text" id="more"><br/><br/> 50 / Pieces per box<br/>$50 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn()" id="myBtn"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+          <div class="w3-quarter">
+                <p>Eggplant Bowl<span id="dots2"></span><span class="moreinfo_text" id="more2"><br/><br/> 32 / Cones per box<br/>$96 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn2()" id="myBtn2"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+          <div class="w3-quarter">
+                <p>Glass & Rubber Bong<span id="dots3"></span><span class="moreinfo_text" id="more3"><br/><br/> 48 / Bundles per box<br/>$96 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn3()" id="myBtn3"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+          <div class="w3-quarter">
+                <p>Glass Bowl Mixed Assortment<span id="dots4"></span><span class="moreinfo_text" id="more4"><br/><br/> 40 / Pieces per box<br/>$80 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                    <button class="button" onclick="myMoreInfoBtn4()" id="myBtn4"> More Info </button>
+                    <div class="product_line"></div>
+                </div>
+        </div>
+        
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                    <p>Glass Bong Mixed Assortment<span id="dots5"></span><span class="moreinfo_text" id="more5"><br/><br/> 50 / Pieces per box<br/>$80 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn5()" id="myBtn5"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+              <div class="w3-quarter">
+                    <p> Shark Pipe <span id="dots6"></span><span class="moreinfo_text" id="more6"><br/><br/> 50 / Pieces per box<br/>$80 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn6()" id="myBtn6"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+              <div class="w3-quarter">
+                    <p>Yellow Glass Bong<span id="dots7"></span><span class="moreinfo_text" id="more7"><br/><br/> 50 / Pieces per box<br/>$80 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn7()" id="myBtn7"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+              <div class="w3-quarter">
+                    <p>Pineapple Glass Bong<span id="dots8"></span><span class="moreinfo_text" id="more8"><br/><br/> 12 / Pieces per box<br/>$120 / Per Box <br/><br/>A lighter is a portable device which generates a flame, and can be used to ignite a variety of items.</span></p>
+                        <button class="button" onclick="myMoreInfoBtn8()" id="myBtn8"> More Info </button>
+                        <div class="product_line"></div>
+                    </div>
+        </div>
+      
+        
+      </div>
+    </section>
+
+
+
+            <br/><br/><br/>
 
             <!--==================== STEPS ====================-->
             <section class="steps section container">
@@ -146,82 +179,6 @@
 
 
 
-<!-- !Products! -->
-<section id="products"> 
-    
-    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" >
-    
-        <h1 class="products__title">Product Categories</h1>
-        
-        <input id="searchbar" onkeyup="search_products()" type="text"
-        name="search" placeholder="Search Products">
-    
-        <br/><br/><br/><br/><br/><br/><br/><br/>
-    
-        <!-- First Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <div class="product_line2"></div>
-            <div class="w3-quarter ">
-                  <a href="raw2.html"><button class="button" "> Raw  </button></a> <br/><br/>
-                <p1 alt="raw products raw rolling paper raw tips raw trident raw paper raw rolling paper raw black rolling paper raw cone raw pipe cleaners raw 2 roller raw hemp wick">A category including various products made and branded by the Raw company. RAW is a brand of rolling papers they are designed to be used for smoking tobacco and cannabis. RAW filters and hand-rolling machines are also available.</p1>    
-                <div class="product_line"></div>
-
-                        
-          </div>
-          <div class="w3-quarter">
-                     <a href="grinders2.html"><button class="button"> Grinders </button></a><br/><br/>
-                     <p1 alt="grinder grinders 4 piece grinder 4 layer grinder automatic grinder 2 layer grinder 2 piece grinder 420 backwoods grinder turtle grinder Elbert Grinder cookies grinder spongebob grinder complex grinder 4 layer grinder 2 layer grinder clear grinder custom grinder">A collection of various types of grinders and grinder designs. A grinder is a tool used to break down cannabis into small bits so they are a similar size and consistency. Weed is commonly ground down for rolling joints, blunts, and spliffs, but can also be done for packing bowls in pipes and bongs for a smoother, more consistent burn.</p1>    
-                <div class="product_line"></div>
-         </div>
-          
-          <div class="w3-quarter" >
-                    <a href="stash2.html"><button class="button">Stash </button></a><br/><br/>
-                    <p1 alt="stash bottle sprite stash coke stash stash can hidden lock locked cookies book lock box pepsi stash bottle ajax bleach stash can shaving cream stash can pringles stash can bleach stash bottle arizona stash bottle">A category including stash products and products for locking things in a hidden way. diversion safe or safe can, is an item used to hide personal belongings in plain sight. Some people use them to hide valuables but often they are used to conceal contraband.</p1>    
-                    <div class="product_line"></div>
-
-        </div>
-          <div class="w3-quarter">
-                    <a href="vapes2.html"><button class="button"> Vapes </button></a><br/><br/>
-                    <p1 alt="vape vapes myles myle mini air bars flum floom puff bars hyde duo hyde edge hyde icon air bar air bar max diamond air bar lux puff bar XXL">A collection of different vape products and companies that we have. Vaping is the inhaling of a vapor created by an electronic cigarette (e-cigarette) or other vaping device. E-cigarettes are battery-powered smoking devices. They have cartridges filled with a liquid that usually contains nicotine, flavorings, and chemicals. The liquid is heated into a vapor, which the person inhales.</p1>    
-                    <div class="product_line"></div>
-
-        </div>
-        </div>
-        
-
-        <br/><br/>
-
-        <!-- Second Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center">
-            <div class="w3-quarter">
-                     <a href="rollingtray2.html"><button class="button"> Rolling Tray </button></a> <br/><br/>
-                    <p1 alt="rolling trays large rolling tray medium rolling tray small rolling tray ooze rolling tray simpons rick and morty">A category including various rolling tray styles, sizes, and designs from various large brands. A rolling tray is a flat surface specifically designed to aid users in rolling joints, blunts, or spliffs.</p1>   
-                    <div class="product_line"></div>
-
-              </div>
-              <div class="w3-quarter">
-                     <a href="lighters2.html"><button class="button"> Lighters</a> </button><br/><br/>
-                    <p1 alt="lighter matches bic clipper weed lighter fire djeep">A category including different lighter products from various big brands. The category also includes different styles of lighters.</p1>    
-                    <div class="product_line"></div>
-
-             </div>
-              <div class="w3-quarter">
-                     <a href="bowls2.html"><button class="button"> Bowls & Pipes </button></a><br/><br/>
-                     <p1 alt="bowls pipes bongs glass bowl glass pipe glass bong rubber pipe rubber bowl rubber bong">A category which includes different bowls, pipes, and bongs all purposed for smoking. The category will include different designed products and different quality products.</p1>    
-                     <div class="product_line"></div>
-
-            </div>
-              <div class="w3-quarter">
-                     <a href="hookah2.html"><button class="button"> Hookah Products </button></a><br/><br/>
-                     <p1 alt="hookah hookah flavors hookah pipe hookah hoses hookah pipes, hookah sets hookah stems hookah shafts various hookah flavors hookah base hookah tray">A category including various hookah products. Such as hookah hoses, hookah pipes, hookah sets, hookah stems, hookah shafts, various hookah flavors, hookah base, hookah tray and more.</p1>  
-                     <div class="product_line"></div>
-
-            </div>
-        </div>
-        
-    </div>
-    
-    </section>
 
         <br/><br/><br/><br/><br/>
             <!--==================== QUESTIONS ====================-->

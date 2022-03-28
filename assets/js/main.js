@@ -329,12 +329,46 @@ restartTimer();
 
 
 
+// Drop Down Menu
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+const dropdowns = Array.from(document.getElementsByClassName("dropdown-content"));
+const elements = [
+ document.getElementById("myDropdown"),
+ document.getElementById("myDropdown1"),
+ document.getElementById("myDropdown2"),
+ document.getElementById("myDropdown3"),
+ document.getElementById("myDropdown4"),
+ document.getElementById("myDropdown5"),
+ document.getElementById("myDropdown6"),
+ document.getElementById("myDropdown7")
+]
+
+function DropDownMenu(){ elements[0].classList.toggle("show")} 
+function DropDownMenu1(){ elements[1].classList.toggle("show")} 
+function DropDownMenu2(){ elements[2].classList.toggle("show")} 
+function DropDownMenu3(){ elements[3].classList.toggle("show")} 
+function DropDownMenu4(){ elements[4].classList.toggle("show")} 
+function DropDownMenu5(){ elements[5].classList.toggle("show")} 
+function DropDownMenu6(){ elements[6].classList.toggle("show")} 
+function DropDownMenu7(){ elements[7].classList.toggle("show")} 
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = (event) => {                 //  <--- JS ES6 arrow function
+  if (!event.target.matches('.dropbtn')) {
+    dropdowns.forEach((element) => {
+        element.classList.remove('show')
+      })
+  }
+}
 
 
 
 // Drop Down Menu
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
+
+/*
 function DropDownMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -505,6 +539,8 @@ window.onclick = function(event) {
     }
   }
 }
+
+*/
 
 
 
